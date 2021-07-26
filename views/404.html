@@ -1,0 +1,21 @@
+{{template "partials/head" .}}
+<link rel="stylesheet" href="/styles/markdown.css" />
+<link rel="stylesheet" href="/styles/templates/error.css" />
+<script src="/js/highlight.min.js"></script>
+</head>
+
+<body>
+  {{template "partials/navbar" .}}
+
+  <div class="error-container">
+    <pre><code class="language-powershell hljs"><span class="hljs-built_in">Public IP</span>: <span class="hljs-literal"><%= ip %></span>
+      <span class="hljs-built_in">curl</span> <span class="hljs-literal">-X</span> GET https://blog.wildwooddev.com:<span class="hljs-number">3000</span><%= url %>
+      <span class="hljs-built_in">curl</span>: (<span class="hljs-number">6</span>) Could not resolve host: GET
+      <span class="hljs-built_in">curl</span>: (<span class="hljs-number">7</span>) Failed to connect to port <span class="hljs-number">3000</span> 
+      <span class="hljs-built_in">curl</span>: (<span class="hljs-number">8</span>) <%= url %> Not Found!
+      <span class="hljs-built_in">Error</span>: <span class="hljs-deletion">404</span>
+      <span class="error-container__terminal"></span><span class="error-container__terminal-slash"></span>
+      </code>
+    </pre>
+  </div>
+  {{template "partials/end" .}}

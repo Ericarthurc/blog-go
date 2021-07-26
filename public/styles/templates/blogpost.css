@@ -1,0 +1,32 @@
+.blog-container {
+  /* display: flex; */
+  /* flex-direction: column; */
+  margin: 0 20%;
+  word-wrap: break-word;
+}
+
+.blog-container p {
+  line-height: 1.5rem;
+}
+
+#eric-christensen {
+  color: #c678dd;
+}
+
+.tags {
+  font-size: 13px;
+  color: #82aaff;
+}
+
+@media screen and (max-width: 1300px) {
+  .blog-container {
+    margin: 0 10%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .blog-container {
+    margin: 0 5%;
+    font-size: 15px;
+  }
+}

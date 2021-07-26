@@ -1,0 +1,125 @@
+.blogindex-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 25%;
+  margin-right: 25%;
+  align-items: center;
+}
+
+.blogindex-header {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.blogindex-posts {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.blogindex-posts__post {
+  margin-bottom: 14px;
+  display: flex;
+}
+
+.blogindex-posts__post a {
+  text-decoration: none;
+  color: #d19a66;
+}
+
+.blogindex-posts__post a:hover {
+  color: #e6c07b;
+}
+
+.blogindex-posts__post a:visited {
+  color: #e6c07b;
+}
+
+.blogindex-posts__post a:visited:hover {
+  color: #d19a66;
+}
+
+.blogindex-posts__post a .new {
+  -webkit-mask-image: linear-gradient(
+    -75deg,
+    rgba(255, 255, 255, 0.6) 30%,
+    rgb(255, 255, 255) 50%,
+    rgba(255, 255, 255, 0.6) 70%
+  );
+  -webkit-mask-size: 200%;
+  animation: shine 1.5s linear infinite;
+  color: #acf876;
+  font-weight: bold;
+}
+
+@keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
+
+.blogindex-posts__post a .new:hover {
+  color: #60e772;
+}
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media only screen and (max-width: 320px) {
+  .blogindex-container {
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 10px;
+  }
+}
+@media only screen and (min-width: 320px) {
+  .blogindex-container {
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 16px;
+  }
+}
+
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media only screen and (min-width: 481px) {
+  .blogindex-container {
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 17px;
+  }
+}
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media only screen and (min-width: 641px) {
+  .blogindex-container {
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 17px;
+  }
+}
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media only screen and (min-width: 961px) {
+  .blogindex-container {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+/* big landscape tablets, laptops, and desktops */
+@media only screen and (min-width: 1025px) {
+  .blogindex-container {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
+/* hi-res laptops and desktops */
+@media only screen and (min-width: 1281px) {
+  .blogindex-container {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
