@@ -6,7 +6,6 @@ import (
 
 	"github.com/yuin/goldmark"
 	meta "github.com/yuin/goldmark-meta"
-	"github.com/yuin/goldmark/extension"
 	"github.com/yuin/goldmark/parser"
 	"github.com/yuin/goldmark/renderer/html"
 )
@@ -17,10 +16,11 @@ func ParserBlog() (string, map[string]interface{}) {
 		goldmark.WithRendererOptions(
 			html.WithUnsafe(),
 		),
+		goldmark.WithParserOptions(
+			parser.WithAutoHeadingID(),
+		),
 		goldmark.WithExtensions(
 			meta.Meta,
-			// highlighting.Highlighting,
-			extension.GFM,
 		),
 	)
 	var buf bytes.Buffer

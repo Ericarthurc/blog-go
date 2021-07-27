@@ -1,7 +1,7 @@
 {{template "partials/head" .}}
-<!-- <link rel="stylesheet" href="/static/styles/markdown.css" /> -->
+<link rel="stylesheet" href="/static/styles/markdown.css" />
 <link rel="stylesheet" href="/static/styles/templates/blogpost.css" />
-<!-- <script src="/static/js/highlight.min.js"></script> -->
+<script src="/static/js/highlight.min.js"></script>
 </head>
 
 <body>
@@ -9,5 +9,5 @@
   <div class="blog-container">
     {{.body}}
   </div>
-</body>
-{{template "partials/end" .}}
+  <script>hljs.highlightAll();</script>
+  {{template "partials/end" .}}
