@@ -17,8 +17,8 @@ func main() {
 	engine := html.New("./views", ".html")
 
 	app := fiber.New(fiber.Config{
-		EnableTrustedProxyCheck: true,
-		Views:                   engine,
+		ProxyHeader: "X-Real-IP",
+		Views:       engine,
 		ErrorHandler: func(c *fiber.Ctx, e error) error {
 			return c.Render("404", fiber.Map{"Url": c.OriginalURL(), "IP": c.IP()})
 		},
