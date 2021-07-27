@@ -10,11 +10,11 @@
   "orientation": "any",
   "icons": [
     {
-      "src": "/images/logo.svg",
+      "src": "/static/images/logo.svg",
       "sizes": "1024x1024"
     },
     {
-      "src": "/images/logo-512x512.png",
+      "src": "/static/images/logo-512x512.png",
       "sizes": "512x512"
     }
   ]

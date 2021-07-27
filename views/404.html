@@ -1,4 +1,4 @@
-{{template "partials/head" .}}
+{{template "partials/head" $title := "Not Found"}}
 <link rel="stylesheet" href="/static/styles/markdown.css" />
 <link rel="stylesheet" href="/static/styles/templates/error.css" />
 </head>
@@ -7,11 +7,12 @@
   {{template "partials/navbar" .}}
 
   <div class="error-container">
-    <pre><code class="language-powershell hljs"><span class="hljs-built_in">Public IP</span>: <span class="hljs-literal"><%= ip %></span>
-      <span class="hljs-built_in">curl</span> <span class="hljs-literal">-X</span> GET https://blog.wildwooddev.com:<span class="hljs-number">3000</span><%= url %>
+    <pre><code class="language-powershell hljs">
+      <span class="hljs-built_in">Public IP</span>: <span class="hljs-literal">{{.IP}}</span>
+      <span class="hljs-built_in">curl</span> <span class="hljs-literal">-X</span> GET https://blog.wildwooddev.com:<span class="hljs-number">3000</span>{{.Url}}
       <span class="hljs-built_in">curl</span>: (<span class="hljs-number">6</span>) Could not resolve host: GET
       <span class="hljs-built_in">curl</span>: (<span class="hljs-number">7</span>) Failed to connect to port <span class="hljs-number">3000</span> 
-      <span class="hljs-built_in">curl</span>: (<span class="hljs-number">8</span>) <%= url %> Not Found!
+      <span class="hljs-built_in">curl</span>: (<span class="hljs-number">8</span>) {{.Url}} Not Found!
       <span class="hljs-built_in">Error</span>: <span class="hljs-deletion">404</span>
       <span class="error-container__terminal"></span><span class="error-container__terminal-slash"></span>
       </code>

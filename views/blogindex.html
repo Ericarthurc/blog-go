@@ -1,0 +1,30 @@
+{{template "partials/head" $title := "Blog - WildwoodTech"}}
+<link rel="stylesheet" href="/static/styles/templates/blogindex.css" />
+</head>
+
+<body>
+  {{template "partials/navbar" .}}
+  <div class="blogindex-container">
+    <h2 class="blogindex-header">Wildwood Tech Posts</h2>
+    <ul class="blogindex-posts">
+      {{range $k, $v := .blogIndex}}
+      <li class="blogindex-posts__post">
+        <span>
+          {{$v.date}}&#160;-&#160;
+        </span>
+        <div>
+          <a href="/blog/{{$v.fileName}}">
+            {{if eq $v.title "New Blog Site!"}}
+            <span class="new">
+              {{else}}
+              <span>
+                {{end}}
+                {{$v.title}}
+              </span>
+          </a>
+        </div>
+      </li>
+      {{end}}
+    </ul>
+  </div>
+  {{template "partials/end" .}}

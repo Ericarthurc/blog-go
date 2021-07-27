@@ -8,8 +8,8 @@ import (
 
 func SetupRoutes(app *fiber.App) {
 	blog := app.Group("/blog")
-	blog.Get("/", controllers.GetBlog)
-	// blog.Get("/:id")
+	blog.Get("/", controllers.GetBlogIndex)
+	blog.Get("/:id", controllers.GetBlog)
 
 	// series := app.Group("/series")
 	// series.Get("/")
