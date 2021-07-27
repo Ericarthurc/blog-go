@@ -11,7 +11,7 @@ func SetupRoutes(app *fiber.App) {
 	blog.Get("/", controllers.GetBlogIndex)
 	blog.Get("/:id", controllers.GetBlog)
 
-	// series := app.Group("/series")
-	// series.Get("/")
-	// series.Get("/:series")
+	series := app.Group("/series")
+	series.Get("/", controllers.GetSeriesIndex)
+	series.Get("/:series", controllers.GetSeriesPosts)
 }

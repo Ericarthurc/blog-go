@@ -5,26 +5,24 @@
 <body>
   {{template "partials/navbar" .}}
   <div class="blogindex-container">
-    <h2 class="blogindex-header">Wildwood Tech Posts</h2>
+    <p class="blogindex-header">Wildwood Tech Posts</p>
     <ul class="blogindex-posts">
       {{range $k, $v := .blogIndex}}
-      <li class="blogindex-posts__post">
-        <span>
-          {{$v.date}}&#160;-&#160;
-        </span>
-        <div>
-          <a href="/blog/{{$v.fileName}}">
-            {{if eq $v.title "New Blog Site!"}}
-            <span class="new">
-              {{else}}
-              <span>
-                {{end}}
-                {{$v.title}}
-              </span>
-          </a>
-        </div>
-      </li>
-      {{end}}
+      {{if eq $v.title "New Blog Site!"}}
+      <a class="blogindex-posts__post new" href="/blog/{{$v.fileName}}">
+        {{else}}
+        <a class="blogindex-posts__post" href="/blog/{{$v.fileName}}">
+          {{end}}
+          <div class="blogindex-post__info">
+            <span class="blogindex-info__title">
+              {{$v.title}}
+            </span>
+            <span class="blogindex-info__date">
+              {{$v.date}}
+            </span>
+          </div>
+        </a>
+        {{end}}
     </ul>
   </div>
   {{template "partials/end" .}}

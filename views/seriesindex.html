@@ -1,0 +1,21 @@
+{{template "partials/head" $title := "Series - WildwoodTech"}}
+<link rel="stylesheet" href="/static/styles/templates/seriesindex.css" />
+</head>
+
+<body>
+  {{template "partials/navbar" .}}
+  <div class="seriesindex-container">
+    <p class="seriesindex-header">Series Posts</p>
+    <ul class="seriesindex-posts">
+      {{range .seriesIndex}}
+      <a class="seriesindex-posts__post" href="/series/{{.}}">
+        <div>
+          <span class="seriesindex-name">
+            {{.}}
+          </span>
+        </div>
+      </a>
+      {{end}}
+    </ul>
+  </div>
+  {{template "partials/end" .}}

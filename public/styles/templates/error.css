@@ -50,14 +50,6 @@
   }
 }
 
-pre code.hljs {
-  display: block;
-  overflow-x: auto;
-  padding: 1em;
-  border-radius: 0.3rem;
-  margin: 0 2%;
-}
-
 @media screen and (max-width: 1300px) {
   .error-container {
     margin: 0 22%;

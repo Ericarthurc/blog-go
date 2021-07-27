@@ -1,0 +1,21 @@
+{
+  "name": "Wildwood Tech",
+  "short_name": "WildwoodTech",
+  "theme_color": "#ff5874",
+  "background_color": "#c678dd",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "description": "Blog",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/static/images/logo.svg",
+      "sizes": "1024x1024"
+    },
+    {
+      "src": "/static/images/logo-512x512.png",
+      "sizes": "512x512"
+    }
+  ]
+}

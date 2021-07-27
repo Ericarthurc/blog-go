@@ -59,16 +59,16 @@ Thank you for checking out this new site! I am very excited about it and hopeful
 
 Picture embeding is super critical to demonstrating information quickly and visually!\
 \
-![WildwoodTech Logo](/images/fav.png)
+![WildwoodTech Logo](/static/images/fav.png)
 
 #### Gif Embeds:
 
-![WildwoodTech Cat](/images/cat.gif)
+![WildwoodTech Cat](/static/images/cat.gif)
 
 #### Links:
 
 <p class="spacer">Image Link:</p>
-<a href="https://www.wildwoodcalvarychapel.com/" target="_blank"><img src="/images/ww.png"></a>
+<a href="https://www.wildwoodcalvarychapel.com/" target="_blank"><img src="/static/images/ww.png"></a>
 
 <p class="spacer">Text Link:</p>
 <a href="https://www.wildwoodcalvarychapel.com/" target="_blank">Wildwood's Website</a>

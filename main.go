@@ -26,9 +26,14 @@ func main() {
 
 	app.Use(recover.New())
 
+	app.Static("/", "./public/root")
 	app.Static("/static", "./public")
 
 	routes.SetupRoutes(app)
+
+	app.Get("/", func(c *fiber.Ctx) error {
+		return c.Redirect("/blog")
+	})
 
 	app.Get("*", func(c *fiber.Ctx) error {
 		return c.Render("404", fiber.Map{"Url": c.OriginalURL(), "IP": c.IP()})

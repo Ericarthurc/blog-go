@@ -1,0 +1,27 @@
+<!-- <%- include('./includes/head', {title: `${series.charAt(0).toUpperCase() + series.slice(1)} - WildwoodTech` }); -%> -->
+{{template "partials/head" $title := "Series - WildwoodTech"}}
+<link rel="stylesheet" href="/static/styles/templates/series.css" />
+</head>
+
+<body>
+  {{template "partials/navbar" .}}
+  <div class="series-container">
+    <p class="series-header">
+      {{.Series}} Series
+    </p>
+    <ul class="series-posts">
+      {{range $k, $v := .seriesPosts}}
+      <a class="series-posts__post" href="/blog/{{$v.fileName}}">
+        <div class="series-post__info">
+          <span class="series-info__title">
+            {{$v.title}}
+          </span>
+          <span class="series-info__date">
+            {{$v.date}}
+          </span>
+        </div>
+      </a>
+      {{end}}
+    </ul>
+  </div>
+  {{template "partials/end" .}}

@@ -10,6 +10,11 @@
 .seriesindex-header {
   margin: 0;
   margin-bottom: 20px;
+  text-transform: capitalize;
+  color: #82aaff;
+  font-weight: bold;
+  font-size: 30px;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
 .seriesindex-posts {
@@ -22,28 +27,35 @@
 }
 
 .seriesindex-posts__post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 14px;
-}
-
-.seriesindex-posts__post a {
+  background: #1f2329;
+  border-radius: 0.3rem;
+  width: 350px;
+  padding: 1em;
   text-decoration: none;
-  color: #d19a66;
-}
-
-.seriesindex-posts__post a:hover {
-  color: #e6c07b;
-}
-
-.seriesindex-posts__post a:visited {
-  color: #e6c07b;
-}
-
-.seriesindex-posts__post a:visited:hover {
-  color: #d19a66;
+  box-shadow: rgb(0 0 0/ 15%) 0px 5px 10px 0px;
 }
 
 .seriesindex-name {
   text-transform: capitalize;
+  color: #eceff4;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.seriesindex-posts__post:hover {
+  background: #5e81ac;
+}
+
+.seriesindex-posts__post:visited {
+  background: #5e81ac;
+}
+
+.seriesindex-posts__post:visited:hover {
+  background: #88c0d0;
 }
 
 /* smartphones, iPhone, portrait 480x320 phones */

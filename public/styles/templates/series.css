@@ -10,34 +10,63 @@
 .series-header {
   margin: 0;
   margin-bottom: 20px;
+  text-transform: capitalize;
+  color: #82aaff;
+  font-weight: bold;
+  font-size: 30px;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
 .series-posts {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.series-post__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.series-info__title {
+  padding-bottom: 5px;
+  color: #eceff4;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.series-info__date {
+  font-size: 14px;
+  color: #e5e9f0;
 }
 
 .series-posts__post {
-  margin-bottom: 14px;
   display: flex;
-}
-
-.series-posts__post a {
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 14px;
+  background: #1f2329;
+  border-radius: 0.3rem;
+  width: 350px;
+  padding: 1em;
   text-decoration: none;
-  color: #d19a66;
+  box-shadow: rgb(0 0 0/ 15%) 0px 5px 10px 0px;
 }
 
-.series-posts__post a:hover {
-  color: #e6c07b;
+.series-posts__post:hover {
+  background: #5e81ac;
 }
 
-.series-posts__post a:visited {
-  color: #e6c07b;
+.series-posts__post:visited {
+  background: #5e81ac;
 }
 
-.series-posts__post a:visited:hover {
-  color: #d19a66;
+.series-posts__post:visited:hover {
+  background: #88c0d0;
 }
 
 /* smartphones, iPhone, portrait 480x320 phones */
