@@ -9,8 +9,8 @@ require (
 	github.com/joho/godotenv v1.3.0
 	github.com/klauspost/compress v1.13.1 // indirect
 	github.com/valyala/fasthttp v1.28.0 // indirect
-	github.com/yuin/goldmark v1.4.0 // indirect
-	github.com/yuin/goldmark-highlighting v0.0.0-20210516132338-9216f9c5aa01 // indirect
-	github.com/yuin/goldmark-meta v1.0.0 // indirect
+	github.com/yuin/goldmark v1.4.0
+	github.com/yuin/goldmark-meta v1.0.0
 	golang.org/x/sys v0.0.0-20210630005230-0f9fa26af87c // indirect
+	gopkg.in/yaml.v2 v2.4.0 // indirect
 )

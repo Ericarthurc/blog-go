@@ -8,6 +8,11 @@
   {{template "partials/navbar" .}}
   <div class="blog-container">
     {{.Body}}
+    <p class="tags">Tags: 
+      {{range .Meta.tags}}
+      `{{.}}`&#160;&#160;
+      {{end}}
+    </p>
   </div>
   <script>hljs.highlightAll();</script>
   {{template "partials/end" .}}
