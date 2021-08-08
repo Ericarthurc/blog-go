@@ -75,7 +75,7 @@ This next section will contain some info and picutres of what to expect with Win
 
 <div class="image">
 
-![Backend Layout](/images/windows11/login.jpg)
+![Backend Layout](/static/images/windows11/login.jpg)
 
 </div>
 
@@ -83,7 +83,7 @@ This next section will contain some info and picutres of what to expect with Win
 
 <div class="image">
 
-![Backend Layout](/images/windows11/light-desktop.jpg)
+![Backend Layout](/static/images/windows11/light-desktop.jpg)
 
 </div>
 
@@ -91,7 +91,7 @@ This next section will contain some info and picutres of what to expect with Win
 
 <div class="image">
 
-![Backend Layout](/images/windows11/dark-desktop.jpg)
+![Backend Layout](/static/images/windows11/dark-desktop.jpg)
 
 </div>
 
@@ -99,7 +99,7 @@ This next section will contain some info and picutres of what to expect with Win
 
 <div class="image">
 
-![Backend Layout](/images/windows11/startmenu.jpg)
+![Backend Layout](/static/images/windows11/startmenu.jpg)
 
 </div>
 
@@ -107,7 +107,7 @@ This next section will contain some info and picutres of what to expect with Win
 
 <div class="image">
 
-![Backend Layout](/images/windows11/fileexplorer.jpg)
+![Backend Layout](/static/images/windows11/fileexplorer.jpg)
 
 </div>
 
@@ -115,7 +115,7 @@ This next section will contain some info and picutres of what to expect with Win
 
 <div class="image">
 
-![Backend Layout](/images/windows11/settings.jpg)
+![Backend Layout](/static/images/windows11/settings.jpg)
 
 </div>
 
@@ -123,7 +123,7 @@ This next section will contain some info and picutres of what to expect with Win
 
 <div class="image">
 
-![Backend Layout](/images/windows11/widgets.jpg)
+![Backend Layout](/static/images/windows11/widgets.jpg)
 
 </div>
 
