@@ -8,7 +8,7 @@
     <p class="blogindex-header">Wildwood Tech Posts</p>
     <ul class="blogindex-posts">
       {{range $k, $v := .blogIndex}}
-      {{if eq $v.title "New Blog Site!"}}
+      {{if eq $v.title "Windows 11"}}
       <a class="blogindex-posts__post new" href="/blog/{{$v.fileName}}">
         {{else}}
         <a class="blogindex-posts__post" href="/blog/{{$v.fileName}}">

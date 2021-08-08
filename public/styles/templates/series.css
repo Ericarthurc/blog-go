@@ -5,6 +5,7 @@
   margin-left: 25%;
   margin-right: 25%;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .series-header {
@@ -59,10 +60,16 @@
   padding: 1em;
   text-decoration: none;
   box-shadow: rgb(0 0 0/ 15%) 0px 5px 10px 0px;
+  border: #1f2329 2px solid;
 }
 
 .series-posts__post:hover {
   background: #5e81ac;
+  border: #5e81ac 2px solid;
+}
+
+.series-posts__post:visited {
+  border: #244d69 2px solid;
 }
 
 @media only screen and (max-width: 320px) {

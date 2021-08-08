@@ -1,6 +1,6 @@
 ---
 title: Windows 11
-date: July 29, 2021
+date: August 6, 2021
 tags:
   - operating system
   - upgrade
@@ -12,9 +12,9 @@ series: windows
 
 <style>
   .image img {
-    width: 600px;
+    width: 720px;
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 840px) {
     .image img {
       width: 100%;
     }
@@ -25,7 +25,7 @@ Hey Wildwood Staff, Windows 11 is upon us! This is a pretty weird launch and I w
 
 ## Launch Dates
 
-From current information gathered, October 20th looks like a solid launch date for Windows 11. This is not 100% confirmed, and could easily change. But the offical version of Windows 11 will launch in a couple months. If you are trying to get access to it now, then you will need to join the <a href="https://insider.windows.com/en-us/" target="_blank">'Windows Insider Program'</a>. But I recommend reading the rest of this post before jumping straight in. 😃
+From current information gathered, October 20th looks like a solid launch date for Windows 11. This is not 100% confirmed, and could easily change. But the offical version of Windows 11 will launch in a couple months. If you are trying to get access to it now, then you will need to join the <a href="https://insider.windows.com/en-us/" target="_blank" rel="noreferrer">'Windows Insider Program'</a>. But I recommend reading the rest of this post before jumping straight in. 😃
 
 ## Wildwood Work Flow
 
@@ -57,9 +57,9 @@ Yep! I support this upgade fully, and encourage you to take the free upgrade whe
 
 All this sounds too good to be true... a free upgrade that everything currently just works on...Well here is the truth, Windows 11 isn't really an upgrade, it's more of a fresh coat of paint on top of some sneaky Microsoft legal work. With the release of Windows 11, Microsoft is forcing new security measures called 'secure boot' and 'TPM'. I won't break these down a ton, but these forced security measures will be leaving a lot of older computers in the dust. The added requirement of a TPM chip is a real bummer, as many computers dont have these chips, and upgrading to Windows 11 without one will be difficult. Windows 10 will have continued support until 2025, but then it will be highly recommended to move to Windows 11 to continue receiving security updates. So it is highly possible many older desktops and laptops without TPM chips will be stuck on Windows 10 and will loose support in 2025. 😔 This doesn't mean your device isn't usable, you will just be subject to an operating system without active security updates. It is estimated that 90% of ransomware attacks, on Windows, occur on computers running unsupported versions of older Windows.
 
-This is going to be pretty confusing for many people, as a TPM chip is not really a know thing, but here is a link to a web page that will help you check if your computer has a TPM chip or even how to check your computers BIOS for one to enable: <a href="https://wccftech.com/how-to/how-to-check-if-your-system-has-tpm-chip-for-a-windows-11-upgrade/" target="_blank">Check if you have a TPM chip</a>.
+This is going to be pretty confusing for many people, as a TPM chip is not really a know thing, but here is a link to a web page that will help you check if your computer has a TPM chip or even how to check your computers BIOS for one to enable: <a href="https://wccftech.com/how-to/how-to-check-if-your-system-has-tpm-chip-for-a-windows-11-upgrade/" target="_blank" rel="noreferrer">Check if you have a TPM chip</a>.
 
-There is also a tool made by Microsoft that will tell you if your system is ready for Windows 11: <a href="https://aka.ms/GetPCHealthCheckApp" target="_blank">Windows 11 Readiness Check Tool</a>. I guess Microsoft has taken down the app, temporarily, but this link should still be good for the future.
+There is also a tool made by Microsoft that will tell you if your system is ready for Windows 11: <a href="https://aka.ms/GetPCHealthCheckApp" target="_blank" rel="noreferrer">Windows 11 Readiness Check Tool</a>. I guess Microsoft has taken down the app, temporarily, but this link should still be good for the future.
 
 As this is pretty confusing please let me know if you need help checking your computer for a TPM and Windows 11 readiness.
 
@@ -75,7 +75,7 @@ This next section will contain some info and picutres of what to expect with Win
 
 <div class="image">
 
-![Backend Layout](/static/images/windows11/login.png)
+![Backend Layout](/images/windows11/login.jpg)
 
 </div>
 
@@ -83,7 +83,7 @@ This next section will contain some info and picutres of what to expect with Win
 
 <div class="image">
 
-![Backend Layout](/static/images/windows11/light-desktop.png)
+![Backend Layout](/images/windows11/light-desktop.jpg)
 
 </div>
 
@@ -91,7 +91,7 @@ This next section will contain some info and picutres of what to expect with Win
 
 <div class="image">
 
-![Backend Layout](/static/images/windows11/dark-desktop.png)
+![Backend Layout](/images/windows11/dark-desktop.jpg)
 
 </div>
 
@@ -99,7 +99,7 @@ This next section will contain some info and picutres of what to expect with Win
 
 <div class="image">
 
-![Backend Layout](/static/images/windows11/startmenu.png)
+![Backend Layout](/images/windows11/startmenu.jpg)
 
 </div>
 
@@ -107,7 +107,7 @@ This next section will contain some info and picutres of what to expect with Win
 
 <div class="image">
 
-![Backend Layout](/static/images/windows11/fileexplorer.png)
+![Backend Layout](/images/windows11/fileexplorer.jpg)
 
 </div>
 
@@ -115,7 +115,7 @@ This next section will contain some info and picutres of what to expect with Win
 
 <div class="image">
 
-![Backend Layout](/static/images/windows11/settings.png)
+![Backend Layout](/images/windows11/settings.jpg)
 
 </div>
 
@@ -123,7 +123,7 @@ This next section will contain some info and picutres of what to expect with Win
 
 <div class="image">
 
-![Backend Layout](/static/images/windows11/widgets.png)
+![Backend Layout](/images/windows11/widgets.jpg)
 
 </div>
 
