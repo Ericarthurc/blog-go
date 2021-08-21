@@ -1,28 +1,25 @@
 {{template "partials/head" $title := "Blog - WildwoodTech"}}
-<link rel="stylesheet" href="/static/styles/templates/blogindex.css" />
 </head>
 
 <body>
   {{template "partials/navbar" .}}
-  <div class="blogindex-container">
-    <p class="blogindex-header">Wildwood Tech Posts</p>
-    <ul class="blogindex-posts">
+  <div class="main-container">
+    <p class="main-header">Wildwood Tech Posts</p>
+    <ul class="index-list">
       {{range $k, $v := .blogIndex}}
-      {{if eq $v.title "Windows 11"}}
-      <a class="blogindex-posts__post new" href="/blog/{{$v.fileName}}">
-        {{else}}
-        <a class="blogindex-posts__post" href="/blog/{{$v.fileName}}">
-          {{end}}
-          <div class="blogindex-post__info">
-            <span class="blogindex-info__title">
+      <li>
+        <a class="list-anchor" href="/blog/{{$v.fileName}}">
+          <div class="list-anchor__info">
+            <span class="info-title">
               {{$v.title}}
             </span>
-            <span class="blogindex-info__date">
+            <span class="info-date">
               {{$v.date}}
             </span>
           </div>
         </a>
-        {{end}}
+      </li>
+      {{end}}
     </ul>
   </div>
   {{template "partials/end" .}}

@@ -1,4 +1,6 @@
-<script async src="/static/js/version.js"></script>
+<script async>
+  console.log(`%cSite Version: 0.9.0-beta.0`, "color: #BADA55");
+</script>
 <script>
   if (!navigator.serviceWorker.controller) {
     navigator.serviceWorker.register("sw.js").then(function (reg) {

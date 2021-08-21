@@ -1,3 +1,3 @@
 ## blog.wildwooddev.com | Go Edition
 
-### v0.1.1-Beta.0
+### v0.9.0-beta.0
